@@ -3,3 +3,13 @@
 command = "pip install -r requirements.txt && python app.py"
 functions = "functions"
 publish = "_site"
+
+[[headers]]
+for = "/static/css/*"
+[headers.values]
+Content-Type = "text/css"
+
+[[headers]]
+for = "/static/js/*"
+[headers.values]
+Content-Type = "application/javascript"
