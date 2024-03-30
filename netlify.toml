@@ -1,0 +1,5 @@
+# netlify.toml
+[build]
+command = "pip install -r requirements.txt && python app.py"
+functions = "functions"
+publish = "_site"

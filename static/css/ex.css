@@ -1,0 +1,21 @@
+h1{
+    color: greenyellow;
+}
+ul{
+    color: rosybrown;
+}
+body{
+    background: green;
+}
+button{
+    color: green;
+}
+.table{
+    border: 1px solid black;
+}
+.table .row{
+    border: 1px solid black;
+}
+.table .col{
+    border: 1px solid black;
+}

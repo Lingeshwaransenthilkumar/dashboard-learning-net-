@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link type="text/css" rel="stylesheet" href="{{url_for("static",filename="css/ex.css")}}">
+        
+    </head>
+    <body>
+        <ul>
+            {% for elements in list %}
+               <li>{{elements}}</li>
+            {% endfor %}
+        </ul>
+        <h1>hello guys</h1>
+        {%block content%}
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/about"><li>About</li></a>
+            <a href="/register"><li>Register</li></a>
+
+        </ul>
+        <button type="button" onclick="x()">Click Me</button>
+        {%endblock%}
+      <script src="{{url_for("static",filename="js/script.js")}}"></script>
+    </body>
+</html>
